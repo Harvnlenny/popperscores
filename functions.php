@@ -119,6 +119,9 @@ function popperscores_scripts() {
         // Add Google Fonts: Fira Sans and Merriweather
         wp_enqueue_style( 'popperscores-google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic|Merriweather:400,400italic,700,700italic');
 
+        // Add Font Awesome icons (http://fontawesome.io) 
+	wp_enqueue_style( 'popperscores-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
+	
         wp_enqueue_script( 'popperscores-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20150330', true );
 	wp_localize_script( 'popperscores-navigation', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'popperscores' ) . '</span>',
